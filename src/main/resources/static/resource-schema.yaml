@@ -1,0 +1,24 @@
+openapi: 3.0.3
+
+info:
+  title: Working title
+  description: Description in progress
+
+  version: 1.0.0-SNAPSHOT
+
+servers:
+  - url: http://localhost:8080
+
+paths:
+
+  /api/info:
+    get:
+      operationId: GetInfo
+      responses:
+        200:
+          $ref: '#/components/responses/201'
+
+components:
+  responses:
+    200:
+      description: OK
